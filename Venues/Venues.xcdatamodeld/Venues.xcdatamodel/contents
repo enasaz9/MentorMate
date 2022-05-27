@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName=".Category" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="venue" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Venue" inverseName="categories" inverseEntity="Venue"/>
+    </entity>
+    <entity name="Venue" representedClassName=".Venue" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="venue" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Venue" positionX="-443.8308715820312" positionY="-121.0072021484375" width="128" height="73"/>
+        <element name="Category" positionX="-54" positionY="9" width="128" height="73"/>
+    </elements>
+</model>
